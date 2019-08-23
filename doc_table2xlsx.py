@@ -38,7 +38,7 @@ def inicio(my_file,mult_tabs):
 def one_tab(doc,_workbook,xlsx_name):
     row_record = 0
     _worksheet = _workbook.Sheets(1)
-    _worksheet.Name = "Baseline"
+    _worksheet.Name = "Tabela"
     _workbook.SaveAs(os.path.join(os.getcwd(), xlsx_name +'.xlsx'))
     for i in range(1,doc.tables.Count+1):
         table = doc.Tables(i)
